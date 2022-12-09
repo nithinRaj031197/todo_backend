@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 app.use(cors());
 app.use(express.json());
-app.use("/api", routes);
+app.use("/", routes);
 
 connection();
 const PORT = process.env.SERVER_PORT ?? 5000;
